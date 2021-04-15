@@ -1,0 +1,43 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package castellanodesarrollo;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author pc11
+ */
+public class CastellanoDesarrollo {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner teclado= new Scanner (System.in);
+        System.out.println("");
+        System.out.println("Ingrese dos numeros y cuando sean diferentes el prgrama parara: ");
+        
+        int a= teclado.nextInt();
+        int b= teclado.nextInt();
+        
+        if (a>b)
+                System.out.println("El numero mas grande es: " +a+ 
+                        "el numero menor es:" +b);
+        else 
+            System.out.println("El numero mas grande es: " +b+ 
+                    "el numero menor es: " +a);
+        
+        while (b!=a){
+            System.out.println("Siga ingresando numeros hasta que sean igual");
+            a= teclado.nextInt();
+            b= teclado.nextInt();
+        
+           
+    }
+    
+    }
+}
